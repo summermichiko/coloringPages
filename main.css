@@ -184,9 +184,8 @@ body {
 
 .content .coloring-copy {
 	margin-bottom: 25px;
-	font-size: 13px;
-	font-weight: 300;
-	font-family: proxima-nova, sans-serif !important;
+	font-size: normal;
+	line-height: 18px;
 }
 
 .content .step2-copy {
