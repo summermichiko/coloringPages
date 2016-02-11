@@ -186,7 +186,7 @@ body {
 	margin-bottom: 25px;
 	font-size: 13px;
 	font-weight: 300;
-	font-family: "Proxima Nova", sans-serif !important;
+	font-family: proxima-nova, sans-serif !important;
 }
 
 .content .step2-copy {
