@@ -1,13 +1,13 @@
 $(document).ready(function() {
 	var page = $('.coloring-pages');
 
-	page.find('.image-thumbnail:first').css('border', '5px solid #f60');
+	page.find('.image-thumbnail:first').css('border', '3px solid #f60');
 
 	page.on('click', '.image-thumbnail img', function() {
 		var imagePath = $(this).attr('src');
 		page.find('.image-preview img').attr('src', imagePath);
-		page.find('.image-thumbnail').css('border', '5px solid #fff');
-		$(this).parent().css('border', '5px solid #f60');
+		page.find('.image-thumbnail').css('border', '3px solid #fff');
+		$(this).parent().css('border', '3px solid #f60');
 	});
 
 	page.find('.count-span').text(' 75 CHARACTERS REMAINING');
