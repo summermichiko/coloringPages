@@ -37,17 +37,15 @@ $(document).ready(function() {
 	// });
 
 	page.on('click', '.set-text-button', function() {
-		// save image
-		//hide input and bottom options
-		// add text - "your customized coloring sheet?"
-		// show edit button
-		// hide good to go button
 		page.find('.text-input').hide();
 		page.find('.thumbnail-wrapper').hide();
 		page.find('.count-div').hide();
 		$(this).hide();
 		page.find('.image-preview').css('margin-left', '0px');
 		page.find('.edit-coloring-page').show();
+
+		// scroll to pick blooms section
+
 	});
 
 	page.find('.edit-coloring-page').hide();

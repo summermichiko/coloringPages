@@ -305,10 +305,10 @@ body {
 }
 
 .edit-coloring-page {
-	background-color: #f60;
+	background-color: #ddd;
 	border: none;
 	text-transform: uppercase;
-	color: #fff;
+	color: #a0a0a0;
 	height: 38px;
 	font-size: 13px;
 	font-weight: 300;
