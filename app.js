@@ -43,18 +43,21 @@ $(document).ready(function() {
 		$(this).hide();
 		page.find('.image-preview').css('margin-left', '0px');
 		page.find('.edit-coloring-page').show();
-
-		// scroll to pick blooms section
-
 	});
 
 	page.find('.edit-coloring-page').hide();
+	var marginLeft;
 	page.on('click', '.edit-coloring-page', function() {
 		page.find('.text-input').show();
 		page.find('.count-div').show();
 		page.find('.thumbnail-wrapper').show();
 		page.find('.set-text-button').show();
-		page.find('.image-preview').css('margin-left', '20px');
+		if ($(window).width() > 767) {
+			marginLeft = '20px';
+		} else {
+			marginLeft = '0';
+		}
+		page.find('.image-preview').css('margin-left', marginLeft);
 		$(this).hide();
 	});
 

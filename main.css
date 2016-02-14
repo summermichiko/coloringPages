@@ -42,7 +42,7 @@ table {
 	border-spacing: 0;
 }
 
-/* BloomThat styles begin */
+/* ---------- BloomThat styles begin ---------- */
 body {
 	width: 100%;
 	height: 100%;
@@ -50,22 +50,20 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 	background-color: #fff;
-	font-weight: normal;
 	font-size: 14px;
-	text-transform: none;
 	color: #3e4651 !important;
-	line-height: 1.7em;
+	line-height: 23.8px;
 	font-family: proxima-nova, sans-serif !important;
 }
 
 /* BloomThat header styles */
 #fixed-header {
 	height: 68px;
+	width: 100%;
 	position: fixed;
 	left: 0;
 	top: 0;
-	background: #fff;
-	width: 100%;
+	background-color: #fff;
 	z-index: 500;
 	opacity: 1;
 }
@@ -84,7 +82,7 @@ body {
 	padding: 20px 0 15px 0;
 }
 
-.logo img {
+.logo a img {
 	max-width: 100%;
 	height: auto;
 }
@@ -108,6 +106,12 @@ body {
 	font-weight: 400;
 	letter-spacing: 0.75px;
 	cursor: pointer;
+}
+
+.lead-menu li a:hover {
+	background: #fff;
+	color: #f60;
+	text-decoration: none;
 }
 
 .sign-in-button {
@@ -135,12 +139,6 @@ body {
 	outline: 0;
 }
 
-.lead-menu li a:hover {
-	background: #fff;
-	color: #f60;
-	text-decoration: none;
-}
-
 .sign-in-button a:hover {
 	border: 2px solid #f60;
 }
@@ -159,7 +157,7 @@ body {
 	padding: 0;
 }
 
-#fixed-body .content .top-image {
+#fixed-body .top-image {
 	height: 300px;
 	width: 100%;
 	border: none;
@@ -167,8 +165,8 @@ body {
 	margin-bottom: 10px;
 }
 
-.content h3 {
-	margin-top: 1em;
+#fixed-body h3 {
+	margin-top: 24px;
 	margin-bottom: 0;
 	font-weight: bold;
 	color: #f60;
@@ -178,23 +176,62 @@ body {
 	text-transform: uppercase;
 }
 
-.content .secondh3 {
-	margin-top: 2em;
+.secondh3 {
+	margin-top: 48px;
 }
 
-.content .coloring-copy {
+.step1-wrapper {
+	margin-bottom: 14px;
+}
+
+.coloring-copy {
 	margin-bottom: 25px;
 	font-size: normal;
 	line-height: 18px;
 }
 
-.content .step2-copy {
-	margin-bottom: 0px;
+.thumbnail-wrapper {
+	display: inline-block;
+	vertical-align: top;
 }
 
-.step1-wrapper .text-wrapper {
-	height: 100px;
+.image-thumbnail {
+	display: inline-block;
+	border: 3px solid #fff;
+	margin-bottom: 3px;
+	transition: border 200ms linear;
+}
+
+.image-thumbnail:hover {
+	border: 3px solid #f60 !important;
+}
+
+.image-thumbnail img {
+	width: 125px;
+	height: auto;
+	cursor: pointer;
+}
+
+.image-preview {
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.image-preview img {
+	width: 561px;
+	height: 726px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	border: 1px solid #d3d6d6;
+}
+
+.text-wrapper {
+	height: 120px;
 	width: 559px;
+	padding-top: 10px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -205,7 +242,7 @@ body {
 	z-index: 50;
 }
 
-.step1-wrapper .text-from-input {
+.text-from-input {
 	z-index: 30;
 	font-size: 30px;
 	width: 100%;
@@ -219,44 +256,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	word-wrap: break-word;
-}
-
-.step1-wrapper .thumbnail-wrapper {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.step1-wrapper .image-thumbnail {
-	display: inline-block;
-	border: 3px solid #fff;
-	margin-bottom: 3px;
-	transition: border 200ms linear;
-}
-
-.step1-wrapper .image-thumbnail:hover {
-	border: 3px solid #f60 !important;
-}
-
-.step1-wrapper .image-thumbnail img {
-	width: 125px;
-	height: auto;
-	cursor: pointer;
-}
-
-.step1-wrapper .image-preview {
-	position: relative;
-	display: inline-block;
-	margin-left: 20px;
-}
-
-.step1-wrapper .image-preview img {
-	width: 561px;
-	height: 726px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: pointer;
-	border: 1px solid #d3d6d6;
 }
 
 .count-div {
@@ -279,7 +278,12 @@ body {
 	width: 100%;
 	border: 1px solid #ccc;
 	box-shadow: none !important;
-	border-radius: 0px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-khtml-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
 	font-size: 12px;
 	display: inline-block;
 	position: relative;
@@ -301,7 +305,12 @@ body {
 	font-size: 13px;
 	font-weight: 300;
 	width: 100%;
-	border-radius: 0px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-khtml-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
 }
 
 .input-wrapper .set-text-button:focus {
@@ -318,6 +327,10 @@ body {
 
 .edit-coloring-page:hover {
 	color: #a0a0a0;
+}
+
+.step2-copy {
+	margin-bottom: 0;
 }
 
 .flower-wrapper {
@@ -346,7 +359,7 @@ body {
 	margin-bottom: 0;
 	text-align: center;
 	font-size: 14px;
-	line-height: 1em;
+	line-height: 14px;
 }
 
 .bouquet-price {
@@ -359,14 +372,30 @@ body {
 }
 
 .final-cta button {
-
+	margin-top: 42px;
+	margin-bottom: 63px;
+	background-color: #f60;
+	padding: 25px 60px;
+	font-size: 1.3em;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 17px;
+	border: 0;
+	transition: background-color 200ms linear;
+	color: #fff;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
 }
 
 /* BloomThat footer styles */
 .base {
 	border-top: solid 2px #eee;
 	font-size: 12;
-	line-height: 1em;
+	line-height: 12px;
 	color: #b3b3b3;
 	padding: 0;
 	text-align: center;
@@ -402,26 +431,34 @@ body {
 	font-size: 11px;
 }
 
+@media only screen and (max-width: 991px) {
+	#header-contain.container {
+		width: 100% !important;
+	}
+}
+
 @media only screen and (max-width: 959px) {
 	#fixed-body .container {
 		max-width: 768px;
 	}
-	.step1-wrapper .image-thumbnail img {
+	.image-thumbnail img {
 		width: 95px;
 	}
 	.input-wrapper {
 		width: 260px;
 	}
-	.step1-wrapper .image-preview img {
+	.image-preview img {
 		width: 450px;
 		height: 582px;
 	}
-	.step1-wrapper .text-wrapper {
+	.text-wrapper {
 		width: 448px;
+		height: 100px;
+		margin-top: 0;
 	}
-	.step1-wrapper .text-from-input {
+	.text-from-input {
 		font-size: 22px;
-		margin-top: 20px;
+		margin-top: 5px;
 	}
 	.flower-wrapper {
 		width: 384px;
@@ -435,25 +472,25 @@ body {
 	.logo a {
 		width: 150px;
 	}
-	.step1-wrapper .image-thumbnail img {
-		width: 198px;
+	.image-thumbnail img {
+		width: 202px;
 	}
 	.input-wrapper {
 		width: 420px;
 	}
-	.step1-wrapper .image-preview {
+	.image-preview {
 		margin-left: 0;
 	}
-	.step1-wrapper .image-preview img {
+	.image-preview img {
 		width: 420px;
 		height: 543px;
 	}
-	.step1-wrapper .text-wrapper {
+	.text-wrapper {
 		width: 418px;
 	}
-	.step1-wrapper .text-from-input {
+	.text-from-input {
 		font-size: 20px;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	.flower-wrapper {
 		width: 210px;
@@ -482,23 +519,25 @@ body {
 	.content h3 {
 		font-size: 21px;
 	}
-	.step1-wrapper .image-thumbnail img {
-		width: 135px;
+	.image-thumbnail img {
+		width: 142px;
 	}
 	.input-wrapper {
 		width: 300px;
 	}
-	.step1-wrapper .image-preview {
+	.image-preview {
 		margin-left: 0;
 	}
-	.step1-wrapper .image-preview img {
+	.image-preview img {
 		width: 300px;
 		height: 388px;
 	}
-	.step1-wrapper .text-wrapper {
+	.text-wrapper {
 		width: 298px;
+		height: 90px;
+		padding-top: 0;
 	}
-	.step1-wrapper .text-from-input {
+	.text-from-input {
 		font-size: 20px;
 		margin-top: 10px;
 		line-height: 24px;
@@ -507,7 +546,7 @@ body {
 		width: 300px;
 	}
 	.master_footer li {
-		padding: 5px 25px;
+		padding: 5px 20px;
 	}
 	.master_footer li a {
 		font-size: 9px;
