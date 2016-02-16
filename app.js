@@ -1,8 +1,10 @@
 $(document).ready(function() {
 	var page = $('.coloring-pages');
 
+	// set border on first thumbnail
 	page.find('.image-thumbnail:first').css('border', '3px solid #f60');
 
+	// change image preview on click
 	page.on('click', '.image-thumbnail img', function() {
 		var imagePath = $(this).attr('src');
 		page.find('.image-preview img').attr('src', imagePath);
@@ -10,6 +12,7 @@ $(document).ready(function() {
 		$(this).parent().css('border', '3px solid #f60');
 	});
 
+	// update char remaining/text on keyup
 	page.find('.count-span').text(' 75 CHARACTERS REMAINING');
 	var charCount = 75;
 	page.on('keyup', '.text-input', function() {
@@ -19,53 +22,38 @@ $(document).ready(function() {
 		page.find('.count-span').text(' ' + charCount - charRemaining + ' CHARACTERS REMAINING');
 	});
 
-	page.on('click', '.flower-wrapper', function() {
-		page.find('.flower-wrapper').css('background-color', '#fff').removeClass('selected');
-		$(this).addClass('selected');
-	});
-
-	// page.on('mouseover', '.flower-wrapper', function() {
-	// 	if (!$(this).hasClass('selected')) {
-	// 		$(this).css('background-color', '#f60');
-	// 	}
-	// });
-
-	// page.on('mouseleave', '.flower-wrapper', function() {
-	// 	if (!$(this).hasClass('selected')) {
-	// 		$(this).css('background-color', '#fff');
-	// 	}
-	// });
-
+	// set text on click
 	page.on('click', '.set-text-button', function() {
-		page.find('.text-input').hide();
-		page.find('.thumbnail-wrapper').hide();
-		page.find('.count-div').hide();
+		page.find('.text-input, .thumbnail-wrapper, .count-div').hide();
 		$(this).hide();
 		page.find('.image-preview').css('margin-left', '0px');
 		page.find('.edit-coloring-page').show();
 	});
 
 	page.find('.edit-coloring-page').hide();
-	var marginLeft;
+	// edit coloring page on click
 	page.on('click', '.edit-coloring-page', function() {
-		page.find('.text-input').show();
-		page.find('.count-div').show();
-		page.find('.thumbnail-wrapper').show();
-		page.find('.set-text-button').show();
-		if ($(window).width() > 767) {
-			marginLeft = '20px';
-		} else {
+		var marginLeft;
+		page.find('.text-input, .count-div, .thumbnail-wrapper, .set-text-button').show();
+		if ($(window).width() < 768) {
 			marginLeft = '0';
+		} else {
+			marginLeft = '20px';
 		}
 		page.find('.image-preview').css('margin-left', marginLeft);
 		$(this).hide();
 	});
 
+	// re-order divs for mobile
 	var inputWrapper = page.find('.input-wrapper');
-	if ($(window).width() < 768)  {
+	if ($(window).width() < 768) {
 		inputWrapper.remove();
 		page.find('.sketch-wrapper').append(inputWrapper);
 	}
 
-
+	// set background color of flowers on click
+	page.on('click', '.flower-wrapper', function() {
+		page.find('.flower-wrapper').css('background-color', '#fff').removeClass('selected');
+		$(this).addClass('selected');
+	});
 });

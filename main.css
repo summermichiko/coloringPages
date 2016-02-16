@@ -51,14 +51,14 @@ body {
 	overflow-x: hidden;
 	background-color: #fff;
 	font-size: 14px;
-	color: #3e4651 !important;
+	color: #3E4651 !important;
 	line-height: 23.8px;
 	font-family: proxima-nova, sans-serif !important;
 }
 
 /* BloomThat header styles */
 #fixed-header {
-	height: 68px;
+	min-height: 68px;
 	width: 100%;
 	position: fixed;
 	left: 0;
@@ -158,7 +158,7 @@ body {
 }
 
 #fixed-body .top-image {
-	height: 300px;
+	height: auto;
 	width: 100%;
 	border: none;
 	background-color: #f9f9f9;
@@ -174,10 +174,6 @@ body {
 	line-height: 35px;
 	text-align: left;
 	text-transform: uppercase;
-}
-
-.secondh3 {
-	margin-top: 48px;
 }
 
 .step1-wrapper {
@@ -329,6 +325,10 @@ body {
 	color: #a0a0a0;
 }
 
+.secondh3 {
+	margin-top: 48px;
+}
+
 .step2-copy {
 	margin-bottom: 0;
 }
@@ -341,7 +341,6 @@ body {
 }
 
 .flower-wrapper.selected {
-	/*background-color: #ff71c6 !important;*/
 	background-color: #f60 !important;
 }
 
@@ -431,6 +430,7 @@ body {
 	font-size: 11px;
 }
 
+/* BloomThat media queries */
 @media only screen and (max-width: 991px) {
 	#header-contain.container {
 		width: 100% !important;
