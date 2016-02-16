@@ -28,6 +28,10 @@ $(document).ready(function() {
 		$(this).hide();
 		page.find('.image-preview').css('margin-left', '0px');
 		page.find('.edit-coloring-page').show();
+		$('html, body').animate({
+	        scrollTop: $('.step2-h3').offset().top - 100
+	    }, 500);
+
 	});
 
 	page.find('.edit-coloring-page').hide();

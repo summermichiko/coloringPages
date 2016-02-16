@@ -325,12 +325,8 @@ body {
 	color: #a0a0a0;
 }
 
-.secondh3 {
+.step2-h3 {
 	margin-top: 48px;
-}
-
-.step2-copy {
-	margin-bottom: 0;
 }
 
 .flower-wrapper {
@@ -388,6 +384,10 @@ body {
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
+}
+
+.final-cta button:focus {
+	outline: none;
 }
 
 /* BloomThat footer styles */
