@@ -1,10 +1,17 @@
 $(document).ready(function() {
-	var page = $('.coloring-pages');
 
-	// set border on first thumbnail
+	var page = $('.coloring-pages'),
+		charCount = 75,
+		inputWrapper = page.find('.input-wrapper');
+
 	page.find('.image-thumbnail:first').css('border', '3px solid #f60');
+	page.find('.count-span').text('75 CHARACTERS REMAINING');
+	page.find('.edit-coloring-page').hide();
+	if ($(window).width() < 768) {
+		inputWrapper.remove();
+		page.find('.sketch-wrapper').append(inputWrapper);
+	}
 
-	// change image preview on click
 	page.on('click', '.image-thumbnail img', function() {
 		var imagePath = $(this).attr('src');
 		page.find('.image-preview img').attr('src', imagePath);
@@ -12,9 +19,6 @@ $(document).ready(function() {
 		$(this).parent().css('border', '3px solid #f60');
 	});
 
-	// update char remaining/text on keyup
-	page.find('.count-span').text(' 75 CHARACTERS REMAINING');
-	var charCount = 75;
 	page.on('keyup', '.text-input', function() {
 		var text = $(this).val(),
 			charRemaining = $(this).val().length;
@@ -22,20 +26,16 @@ $(document).ready(function() {
 		page.find('.count-span').text(' ' + charCount - charRemaining + ' CHARACTERS REMAINING');
 	});
 
-	// set text on click
 	page.on('click', '.set-text-button', function() {
 		page.find('.text-input, .thumbnail-wrapper, .count-div').hide();
 		$(this).hide();
 		page.find('.image-preview').css('margin-left', '0px');
 		page.find('.edit-coloring-page').show();
 		$('html, body').animate({
-	        scrollTop: $('.step2-h3').offset().top - 100
-	    }, 500);
-
+			scrollTop: $('.step2-h3').offset().top - 100
+		}, 600);
 	});
 
-	page.find('.edit-coloring-page').hide();
-	// edit coloring page on click
 	page.on('click', '.edit-coloring-page', function() {
 		var marginLeft;
 		page.find('.text-input, .count-div, .thumbnail-wrapper, .set-text-button').show();
@@ -48,25 +48,16 @@ $(document).ready(function() {
 		$(this).hide();
 	});
 
-	// re-order divs for mobile
-	var inputWrapper = page.find('.input-wrapper');
-	if ($(window).width() < 768) {
-		inputWrapper.remove();
-		page.find('.sketch-wrapper').append(inputWrapper);
-	}
-
-	// set background color of flowers on click
 	page.on('click', '.flower-wrapper', function() {
 		page.find('.flower-wrapper').css('background-color', '#fff').removeClass('selected');
 		$(this).addClass('selected');
-		if ($(window).width() < 768) {
+		if ($(window).width() < 960) {
 			$('html, body').animate({
-		        scrollTop: $('.base').offset().top
-		    }, 500);
+				scrollTop: $('.bloomButton').offset().top - 100
+			}, 600);
 		}
 	});
 
-	// open modal on click
 	page.on('click', '.bloomButton', function() {
 		$('#bloomModal').modal({
 			backdrop: 'static',
@@ -76,12 +67,9 @@ $(document).ready(function() {
 
 	page.on('click', '.revisit-campaign', function() {
 		$('#bloomModal').modal('hide');
-
 	});
 
 	page.on('click', '.to-portfolio', function() {
 		window.open('http://summermcdonald.me/', '_blank');
 	});
-
-
 });

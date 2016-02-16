@@ -56,7 +56,7 @@ body {
 	font-family: proxima-nova, sans-serif !important;
 }
 
-/* BloomThat header styles */
+/* Header Styles */
 #fixed-header {
 	min-height: 68px;
 	width: 100%;
@@ -79,7 +79,7 @@ body {
 .logo a {
 	width: 210px;
 	display: block;
-	padding: 20px 0 15px 0;
+	padding: 25px 0 15px 0;
 }
 
 .logo a img {
@@ -143,7 +143,7 @@ body {
 	border: 2px solid #f60;
 }
 
-/* MODAL */
+/* Modal Styles */
 .modal .modal-content {
 	border-radius: 0;
 	font-family: proxima-nova, sans-serif !important;
@@ -159,6 +159,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 25px;
 	line-height: 26px;
+	font-weight: 300;
 }
 
 .modal .buttonWrapper {
@@ -195,7 +196,7 @@ body {
 	outline: none;
 }
 
-/* BloomThat body styles */
+/* Body Styles */
 #fixed-body {
 	margin-top: 107px;
 }
@@ -228,6 +229,7 @@ body {
 	text-transform: uppercase;
 }
 
+/* Coloring Pages Styles */
 .step1-wrapper {
 	margin-bottom: 14px;
 }
@@ -377,6 +379,7 @@ body {
 	color: #a0a0a0;
 }
 
+/* Select Blooms Styles */
 .step2-h3 {
 	margin-top: 48px;
 }
@@ -414,6 +417,7 @@ body {
 	text-align: center;
 }
 
+/* Final Button Styles */
 .final-cta {
 	text-align: center;
 }
@@ -442,7 +446,7 @@ body {
 	outline: none;
 }
 
-/* BloomThat footer styles */
+/* Footer Styles */
 .base {
 	border-top: solid 2px #eee;
 	font-size: 12;
@@ -482,7 +486,7 @@ body {
 	font-size: 11px;
 }
 
-/* BloomThat media queries */
+/* Media Queries Styles */
 @media only screen and (max-width: 991px) {
 	#header-contain.container {
 		width: 100% !important;
@@ -543,6 +547,9 @@ body {
 	.text-from-input {
 		font-size: 20px;
 		margin-top: 10px;
+	}
+	.edit-wrapper {
+		margin-top: -20px;
 	}
 	.flower-wrapper {
 		width: 210px;
