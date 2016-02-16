@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>BloomThat Coloring Pages</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="stylesheet" href="main.css" media="screen">
 		<link href='https://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<meta name="robots" content="noindex">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="https://use.typekit.net/ole1mkz.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 	<body class="coloring-pages">
+
+		<!-- header -->
 		<div id="fixed-header" class="container content header">
 			<div id="header-contain" class="container">
 				<div class="col-xs-4 logo">
@@ -37,6 +41,23 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- modal -->
+		<div class="modal fade" id="bloomModal" tabindex="-1" role="dialog" aria-labelledby="bloomModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<h4 class="completionText">This just a prototype, but I'd love to make this real!</h4>
+						<div class="buttonWrapper">
+							<button class="revisit-campaign">Revisit Campaign</button>
+							<button class="to-portfolio">Check out Summer's Portfolio</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- body -->
 		<div id="fixed-body">
 			<div class="container">
 				<div class="main content">
@@ -118,11 +139,13 @@
 						</div>
 					</div>
 					<div class="final-cta">
-						<button>Bloom Your BFF</button>
+						<button class="bloomButton">Bloom Your BFF</button>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- footer -->
 		<div class="base">
 			<div class="container">
 				<div class="col-xs-12">
@@ -168,7 +191,6 @@
 				</div>
 			</div>
 		</div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<meta id="testViewport" name="viewport" content="width=device-width, maximum-scale=1">
 	</body>

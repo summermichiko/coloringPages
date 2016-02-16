@@ -65,4 +65,23 @@ $(document).ready(function() {
 		    }, 500);
 		}
 	});
+
+	// open modal on click
+	page.on('click', '.bloomButton', function() {
+		$('#bloomModal').modal({
+			backdrop: 'static',
+			keyboard: false
+		});
+	});
+
+	page.on('click', '.revisit-campaign', function() {
+		$('#bloomModal').modal('hide');
+
+	});
+
+	page.on('click', '.to-portfolio', function() {
+		window.open('http://summermcdonald.me/', '_blank');
+	});
+
+
 });

@@ -143,6 +143,58 @@ body {
 	border: 2px solid #f60;
 }
 
+/* MODAL */
+.modal .modal-content {
+	border-radius: 0;
+	font-family: proxima-nova, sans-serif !important;
+}
+
+.modal .modal-body {
+	padding: 50px 40px;
+	background-color: #fff;
+}
+
+.modal .completionText {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 25px;
+	line-height: 26px;
+}
+
+.modal .buttonWrapper {
+	text-align: center;
+}
+
+.modal button {
+	padding: 13px 10px;
+	border-radius: 2px;
+	color: #fff;
+	border: none;
+	text-transform: uppercase;
+}
+
+.modal .revisit-campaign {
+	background-color: #efefef;
+	color: #333;
+	margin-right: 5px;
+}
+
+.modal .to-portfolio {
+	background-color: #f60;
+}
+
+.modal .revisit-campaign:hover {
+	background-color: #e3e3e3;
+}
+
+.modal .to-portfolio:hover {
+	background-color: #f60;
+}
+
+.modal button:focus {
+	outline: none;
+}
+
 /* BloomThat body styles */
 #fixed-body {
 	margin-top: 107px;
@@ -506,6 +558,14 @@ body {
 @media only screen and (max-width: 479px) {
 	#header-contain {
 		padding: 0 !important;
+	}
+	.modal .revisit-campaign {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.modal .to-portfolio {
+		width: 100%;
 	}
 	#fixed-body .container {
 		max-width: 300px;
