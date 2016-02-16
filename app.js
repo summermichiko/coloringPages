@@ -59,5 +59,10 @@ $(document).ready(function() {
 	page.on('click', '.flower-wrapper', function() {
 		page.find('.flower-wrapper').css('background-color', '#fff').removeClass('selected');
 		$(this).addClass('selected');
+		if ($(window).width() < 768) {
+			$('html, body').animate({
+		        scrollTop: $('.base').offset().top
+		    }, 500);
+		}
 	});
 });
