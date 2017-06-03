@@ -42,30 +42,30 @@ table {
 	border-spacing: 0;
 }
 
-/* ---------- BloomThat styles begin ---------- */
+/* ---------- Project styles begin ---------- */
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	overflow-x: hidden;
 	background-color: #fff;
-	font-size: 14px;
-	color: #3E4651 !important;
-	line-height: 23.8px;
+	color: #3e4651 !important;
 	font-family: proxima-nova, sans-serif !important;
+	font-size: 14px;
+	height: 100%;
+	line-height: 23.8px;
+	margin: 0px;
+	overflow-x: hidden;
+	padding: 0px;
+	width: 100%;
 }
 
 /* Header Styles */
 #fixed-header {
-	min-height: 68px;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
 	background-color: #fff;
-	z-index: 500;
+	left: 0;
+	min-height: 68px;
 	opacity: 1;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
 }
 
 .header {
@@ -77,14 +77,14 @@ body {
 }
 
 .logo a {
-	width: 210px;
 	display: block;
 	padding: 25px 0 15px 0;
+	width: 210px;
 }
 
 .logo a img {
-	max-width: 100%;
 	height: auto;
+	max-width: 100%;
 }
 
 .lead-menu {
@@ -101,11 +101,11 @@ body {
 
 .lead-menu li a {
 	color: #707070;
-	text-transform: uppercase;
+	cursor: pointer;
 	font-size: 11px;
 	font-weight: 400;
 	letter-spacing: 0.75px;
-	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .lead-menu li a:hover {
@@ -119,24 +119,23 @@ body {
 }
 
 .sign-in-button a {
-	padding: 8px 23px;
-	font-size: 12px;
 	border: 2px solid #707070;
-	color: #707070;
-	text-align: center;
-	margin: -5px 0 0 0;
-	font-weight: 600;
-	letter-spacing: .75px;
-	line-height: 17px;
-	text-transform: uppercase;
-	text-shadow: 0 0 rgba(0,0,0,0.1);
-	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-khtml-border-radius: 2px;
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
+	border-radius: 2px;
+	color: #707070;
+	font-size: 12px;
+	letter-spacing: .75px;
+	line-height: 17px;
+	margin: -5px 0 0 0;
 	outline: 0;
+	padding: 8px 23px;
+	text-align: center;
+	text-shadow: 0 0 rgba(0,0,0,0.1);
+	text-transform: uppercase;
 }
 
 .sign-in-button a:hover {
@@ -150,16 +149,16 @@ body {
 }
 
 .modal .modal-body {
-	padding: 50px 40px;
 	background-color: #fff;
+	padding: 50px 40px;
 }
 
 .modal .completionText {
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 25px;
-	line-height: 26px;
 	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 25px;
+	margin-top: 0;
+	text-align: center;
 }
 
 .modal .buttonWrapper {
@@ -167,10 +166,10 @@ body {
 }
 
 .modal button {
-	padding: 13px 10px;
+	border: none;
 	border-radius: 2px;
 	color: #fff;
-	border: none;
+	padding: 13px 10px;
 	text-transform: uppercase;
 }
 
@@ -211,20 +210,20 @@ body {
 }
 
 #fixed-body .top-image {
-	height: auto;
-	width: 100%;
 	border: none;
 	background-color: #f9f9f9;
+	height: auto;
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 #fixed-body h3 {
-	margin-top: 24px;
-	margin-bottom: 0;
-	font-weight: bold;
 	color: #f60;
 	font-size: 24px;
+	font-weight: bold;
 	line-height: 35px;
+	margin-bottom: 0;
+	margin-top: 24px;
 	text-align: left;
 	text-transform: uppercase;
 }
@@ -235,9 +234,9 @@ body {
 }
 
 .coloring-copy {
-	margin-bottom: 25px;
 	font-size: normal;
 	line-height: 18px;
+	margin-bottom: 25px;
 }
 
 .thumbnail-wrapper {
@@ -246,8 +245,8 @@ body {
 }
 
 .image-thumbnail {
-	display: inline-block;
 	border: 3px solid #fff;
+	display: inline-block;
 	margin-bottom: 3px;
 	transition: border 200ms linear;
 }
@@ -257,55 +256,55 @@ body {
 }
 
 .image-thumbnail img {
-	width: 125px;
-	height: auto;
 	cursor: pointer;
+	height: auto;
+	width: 125px;
 }
 
 .image-preview {
-	position: relative;
 	display: inline-block;
 	margin-left: 20px;
+	position: relative;
 }
 
 .image-preview img {
-	width: 561px;
-	height: 726px;
+	border: 1px solid #d3d6d6;
+	cursor: pointer;
 	display: block;
+	height: 726px;
 	margin-left: auto;
 	margin-right: auto;
-	cursor: pointer;
-	border: 1px solid #d3d6d6;
+	width: 561px;
 }
 
 .text-wrapper {
+	background-color: #fff;
+	bottom: 0;
 	height: 120px;
-	width: 559px;
+	left: 0;
+	margin: auto;
+	margin-bottom: 1px;
 	padding-top: 10px;
 	position: absolute;
-	left: 0;
 	right: 0;
-	margin: auto;
-	bottom: 0;
-	margin-bottom: 1px;
-	background-color: #fff;
+	width: 559px;
 	z-index: 50;
 }
 
 .text-from-input {
-	z-index: 30;
-	font-size: 30px;
-	width: 100%;
-	text-align: center;
 	bottom: 0;
-	font-family: Londrina Outline;
-	position: relative;
-	margin-bottom: 0;
-	max-width: 92%;
 	display: block;
+	font-size: 30px;
+	font-family: Londrina Outline;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 92%;
+	position: relative;
+	text-align: center;
+	width: 100%;
 	word-wrap: break-word;
+	z-index: 30;
 }
 
 .count-div {
@@ -313,31 +312,31 @@ body {
 }
 
 .count-span {
-	font-size: 11px;
 	color: #bbb;
+	font-size: 11px;
 	text-transform: uppercase;
 }
 
 .input-wrapper {
-	width: 268px;
 	margin-top: 20px;
+	width: 268px;
 }
 
 .input-wrapper textarea {
-	padding: 10px;
-	width: 100%;
-	border: 1px solid #ccc;
-	box-shadow: none !important;
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-khtml-border-radius: 0;
 	-moz-border-radius: 0;
 	-ms-border-radius: 0;
 	-o-border-radius: 0;
-	font-size: 12px;
+	border: 1px solid #ccc;
+	box-shadow: none !important;
 	display: inline-block;
+	font-size: 12px;
+	padding: 10px;
 	position: relative;
 	resize: none;
+	width: 100%;
 }
 
 .input-wrapper textarea:focus {
@@ -346,21 +345,21 @@ body {
 }
 
 .input-wrapper .set-text-button {
-	display: inline-block;
 	background-color: #f60;
 	border: none;
-	text-transform: uppercase;
-	color: #fff;
-	height: 38px;
-	font-size: 13px;
-	font-weight: 300;
-	width: 100%;
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-khtml-border-radius: 0;
 	-moz-border-radius: 0;
 	-ms-border-radius: 0;
 	-o-border-radius: 0;
+	color: #fff;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 300;
+	height: 38px;
+	text-transform: uppercase;
+	width: 100%;
 }
 
 .input-wrapper .set-text-button:focus {
@@ -368,11 +367,11 @@ body {
 }
 
 .edit-coloring-page {
-	text-transform: uppercase;
 	color: #a0a0a0;
 	font-size: 13px;
 	font-weight: 300;
 	text-decoration: underline;
+	text-transform: uppercase;
 }
 
 .edit-coloring-page:hover {
@@ -385,10 +384,10 @@ body {
 }
 
 .flower-wrapper {
-	width: 225px;
-	padding: 10px;
 	float: left;
+	padding: 10px;
 	transition: background-color 200ms linear;
+	width: 225px;
 }
 
 .flower-wrapper.selected {
@@ -396,8 +395,8 @@ body {
 }
 
 .flower-wrapper:hover {
-	cursor: pointer;
 	background-color: #f60 !important;
+	cursor: pointer;
 }
 
 .flower-wrapper img {
@@ -405,11 +404,11 @@ body {
 }
 
 .bouquet-name {
-	margin-top: 5px;
-	margin-bottom: 0;
-	text-align: center;
 	font-size: 14px;
 	line-height: 14px;
+	margin-bottom: 0;
+	margin-top: 5px;
+	text-align: center;
 }
 
 .bouquet-price {
@@ -423,23 +422,23 @@ body {
 }
 
 .final-cta button {
-	margin-top: 42px;
-	margin-bottom: 63px;
 	background-color: #f60;
-	padding: 25px 60px;
-	font-size: 1.3em;
-	font-weight: 300;
-	text-transform: uppercase;
-	line-height: 17px;
 	border: 0;
-	transition: background-color 200ms linear;
-	color: #fff;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
 	-khtml-border-radius: 2px;
 	-moz-border-radius: 2px;
 	-ms-border-radius: 2px;
 	-o-border-radius: 2px;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 300;
+	line-height: 17px;
+	margin-top: 42px;
+	margin-bottom: 63px;
+	padding: 25px 60px;
+	text-transform: uppercase;
+	transition: background-color 200ms linear;
 }
 
 .final-cta button:focus {
@@ -449,14 +448,14 @@ body {
 /* Footer Styles */
 .base {
 	border-top: solid 2px #eee;
-	font-size: 12;
-	line-height: 12px;
 	color: #b3b3b3;
+	font-size: 12;
+	height: 278px;
+	line-height: 12px;
+	margin-top: 48px;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
-	height: 278px;
-	margin-top: 48px;
 }
 
 .base .container {
@@ -473,17 +472,17 @@ body {
 
 .master_footer li {
 	display: inline-block;
-	padding: 10px 25px;
-	margin-bottom: 12px;
 	line-height: 18px;
+	margin-bottom: 12px;
+	padding: 10px 25px;
 }
 
 .master_footer li a {
 	color: #707070;
+	font-size: 11px;
 	font-weight: 400;
 	letter-spacing: .75px;
 	text-transform: uppercase;
-	font-size: 11px;
 }
 
 /* Media Queries Styles */
@@ -504,13 +503,13 @@ body {
 		width: 260px;
 	}
 	.image-preview img {
-		width: 450px;
 		height: 582px;
+		width: 450px;
 	}
 	.text-wrapper {
-		width: 448px;
 		height: 100px;
 		margin-top: 0;
+		width: 448px;
 	}
 	.text-from-input {
 		font-size: 22px;
@@ -538,8 +537,8 @@ body {
 		margin-left: 0;
 	}
 	.image-preview img {
-		width: 420px;
 		height: 543px;
+		width: 420px;
 	}
 	.text-wrapper {
 		width: 418px;
@@ -567,9 +566,9 @@ body {
 		padding: 0 !important;
 	}
 	.modal .revisit-campaign {
-		width: 100%;
-		margin-right: 0;
 		margin-bottom: 10px;
+		margin-right: 0;
+		width: 100%;
 	}
 	.modal .to-portfolio {
 		width: 100%;
@@ -596,18 +595,18 @@ body {
 		margin-left: 0;
 	}
 	.image-preview img {
-		width: 300px;
 		height: 388px;
+		width: 300px;
 	}
 	.text-wrapper {
-		width: 298px;
 		height: 90px;
 		padding-top: 0;
+		width: 298px;
 	}
 	.text-from-input {
 		font-size: 20px;
-		margin-top: 10px;
 		line-height: 24px;
+		margin-top: 10px;
 	}
 	.flower-wrapper {
 		width: 300px;
